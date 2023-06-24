@@ -16,7 +16,10 @@ fn main() {
         // исключение неверного ввода
         let user_hand: u8 = match user_hand.trim().parse() {
             Ok(user_hand) => user_hand,
-            Err(_) => continue,
+            Err(e) => {
+                println!("Error - {}", e);
+                continue;
+            },
         };
 
         // выход из программы
