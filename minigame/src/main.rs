@@ -33,32 +33,49 @@ fn main() {
 }
 
 fn choose (user_hand: u8, bot_hand: u8) {
-    if user_hand == 1 && bot_hand == 3 {
-        println!("Your opponent have scissors");
-        println!("You win")
-    } else if user_hand == 1 && bot_hand == 2 {
-        println!("Your opponent have paper");
-        println!("You lose")
-    } else if user_hand == 1 && bot_hand == 1 {
-        println!("Your opponent have rock too");
-        println!("Draw!")
-    } else if user_hand == 2 && bot_hand == 3 {
-        println!("Your opponent have scissors");
-        println!("You lose")
-    } else if user_hand == 2 && bot_hand == 2 {
-        println!("Your opponent have paper too");
-        println!("Draw")
-    } else if user_hand == 2 && bot_hand == 1 {
-        println!("Your opponent have rock");
-        println!("You win")
-    } else if user_hand == 3 && bot_hand == 3 {
-        println!("Your opponent have scissors too");
-        println!("Draw!")
-    } else if user_hand == 3 && bot_hand == 2 {
-        println!("Your opponent have paper");
-        println!("You win!")
-    } else if user_hand == 3 && bot_hand == 1 {
-        println!("Your opponent have rock");
-        println!("You lose")
+    if user_hand == 1 {
+        match bot_hand {
+            1 => {
+                println!("Your opponent have scissors");
+                println!("You win");
+            },
+            2 => {
+                println!("Your opponent have paper");
+                println!("You lose");
+            },
+            3 => {
+                println!("Your opponent have rock too");
+                println!("Draw!");
+            }
+            _ => print!("Error")
+        }
     }
+    // if user_hand == 1 && bot_hand == 3 {
+    //     println!("Your opponent have scissors");
+    //     println!("You win")
+    // } else if user_hand == 1 && bot_hand == 2 {
+    //     println!("Your opponent have paper");
+    //     println!("You lose")
+    // } else if user_hand == 1 && bot_hand == 1 {
+    //     println!("Your opponent have rock too");
+    //     println!("Draw!")
+    // } else if user_hand == 2 && bot_hand == 3 {
+    //     println!("Your opponent have scissors");
+    //     println!("You lose")
+    // } else if user_hand == 2 && bot_hand == 2 {
+    //     println!("Your opponent have paper too");
+    //     println!("Draw")
+    // } else if user_hand == 2 && bot_hand == 1 {
+    //     println!("Your opponent have rock");
+    //     println!("You win")
+    // } else if user_hand == 3 && bot_hand == 3 {
+    //     println!("Your opponent have scissors too");
+    //     println!("Draw!")
+    // } else if user_hand == 3 && bot_hand == 2 {
+    //     println!("Your opponent have paper");
+    //     println!("You win!")
+    // } else if user_hand == 3 && bot_hand == 1 {
+    //     println!("Your opponent have rock");
+    //     println!("You lose")
+    // }
 }
