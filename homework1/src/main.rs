@@ -3,8 +3,12 @@ mod functions;
 mod ifs;
 mod primitive_types;
 fn main() {
-    primitive_types::primitive_types5();
+    println!("ez domashka");
 }
+
+//-------------
+//FIZZBUZZ TASK
+//-------------
 
 fn fizzbuzz() {
     for i in 1..=100 {
