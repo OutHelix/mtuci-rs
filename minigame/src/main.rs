@@ -55,16 +55,16 @@ fn choose (user_hand: u8, bot_hand: u8) {
     } else if user_hand == 2 {
         match bot_hand {
             1 => {
-                println!("Your opponent have rock too");
-                println!("Draw!")
+                println!("Your opponent have rock");
+                println!("You win")
             },
             2 => {
-                println!("Your opponent have paper");
-                println!("You lose")
+                println!("Your opponent have paper too");
+                println!("Draw!")
             },
             3 => {
                 println!("Your opponent have scissors");
-                println!("You win")
+                println!("You lose")
             }
             _ => print!("Error")
         }
