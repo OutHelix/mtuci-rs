@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "homework1",
+    "homework2",
     "minigame",
     "part1",
     "part2",
