@@ -22,9 +22,9 @@ pub fn zat() {
     println!("The value of x is: {x}");
 }
 
-pub fn spaces() {
-    let spaces = "   ";
-    let spaces = spaces.len();
-    println!("{}", spaces);
-}
+// pub fn spaces() {
+//     let spaces = "   ";
+//     let spaces = spaces.len();
+//     println!("{}", spaces);
+// }
 
